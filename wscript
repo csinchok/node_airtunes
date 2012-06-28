@@ -16,9 +16,9 @@ def build(bld):
   obj.target = 'bindings'
 
   obj.source = [ 'src/codec.cc', 'src/bindings.cc',
-                 'alac/EndianPortable.c', 'alac/ALACBitUtilities.c', 'alac/ALACEncoder.cpp',
-                 'alac/ag_enc.c', 'alac/ag_dec.c', 'alac/dp_enc.c', 'alac/matrix_enc.c',
-                 'src/aes_utils.c', 'src/base64.c', 'src/CAHostTimeBase.cpp' ]
+                 'alac/EndianPortable.cc', 'alac/ALACBitUtilities.cc', 'alac/ALACEncoder.cpp',
+                 'alac/ag_enc.cc', 'alac/ag_dec.cc', 'alac/dp_enc.cc', 'alac/matrix_enc.cc',
+                 'src/aes_utils.cc', 'src/base64.cc', 'src/CAHostTimeBase.cpp' ]
 
   if sys.platform == 'darwin':
     obj.cxxflags = ["-I", "/System/Library/Frameworks/Kernel.framework/Versions/A/Headers/sys"]
